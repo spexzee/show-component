@@ -5,12 +5,13 @@ interface ShowProps {
   children: React.ReactNode;
 }
 
-const ShowComponent: React.FC<ShowProps> = ({ when, children }) => {
+// Define ShowComponent as a function rather than a React component
+function showComponent(when: boolean | (() => boolean), children: React.ReactNode) {
   // Evaluate the `when` prop, whether it's a boolean or a function
   const shouldRender = typeof when === 'function' ? when() : when;
 
-  // Render children only if the condition is met
+  // Return the children only if the condition is met, otherwise return null
   return shouldRender ? children : null;
-};
+}
 
-export default ShowComponent;
+export default showComponent;

@@ -1,16 +1,9 @@
 {
-    "compilerOptions": {
-      "outDir": "./dist",
-      "module": "commonjs",
-      "target": "es5",
-      "jsx": "react",
-      "declaration": true,
-      "lib": [
-        "DOM",
-        "ES2015",
-        "ES2015.Iterable"
-      ]
-    },
-    "include": ["src/**/*"]
-  }
-  
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true
+  },
+  "include": ["src", "node_modules/show-component", "declarations.d.ts"]
+}
