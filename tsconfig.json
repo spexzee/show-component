@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+      "outDir": "./dist",
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react",
+      "declaration": true,
+      "lib": [
+        "DOM",
+        "ES2015",
+        "ES2015.Iterable"
+      ]
+    },
+    "include": ["src/**/*"]
+  }
+  

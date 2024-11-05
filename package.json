@@ -1,0 +1,16 @@
+{
+  "name": "show-component",
+  "version": "2.0.0",
+  "description": "A lightweight React component for conditional rendering, allowing you to easily show or hide children based on a boolean value or a function returning a boolean.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "author": "Spexzee",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  }
+}
